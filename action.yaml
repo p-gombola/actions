@@ -11,7 +11,6 @@ runs:
         exit 1
     - name: action-always-run
       uses: docker://alpine:3.20
-      if: ${{always()}}
       run: |
         echo "Running the always step"
     - name: action-should-not-run
